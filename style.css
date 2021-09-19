@@ -1,0 +1,340 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+
+  
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.grybg{
+    background-color: #f9fafb;
+}
+
+/* header section custom css */
+
+.main-header .container-fluid
+.slider-section .container-fluid{
+    max-width: 1480px;
+}
+.arow{
+
+}
+body .btn-primary{
+    background-color: #e73a3e; !important
+    border-color : #e73a3e; 
+    padding: 10px 48px;
+    font-size: 16px;
+    border:none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color :#111;
+    border-color: #111;
+    z-index:-1;
+    transition:all .4s ease-in-out;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+ul.my-primary-manu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+/* menu section */
+
+ul.my-primary-manu{}
+ul.my-primary-manu li{}
+ul.my-primary-manu li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+}
+ul.my-primary-manu li a:hover{}
+
+/* dropedawn menu  */
+
+ul.my-primary-manu li{
+    position: relative;
+}
+ul.my-primary-manu li ul{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 160%;
+    background: #fafafa;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .1);
+
+    opacity: 0;
+    visibility: hidden;
+    transition:all .4s ease-in-out;
+}
+ul.my-primary-manu li ul li{}
+ul.my-primary-manu li ul li a{}
+
+
+
+.header-info{}
+.header-scerch{
+    width: 50px;
+    font-size: 22p;
+    text-align: center;
+    margin-right: 20px;
+    border-right:1px solid #ddd;
+}
+.header-scerch span{
+    font-size: 25px;
+    font-weight: 700;
+}
+.header-coll{width: 220px;}
+.header-coll img{
+    width: 40px;
+    
+}
+.hrader-coll-info{}
+.hrader-coll-info span{
+    color: #606060;
+}
+.hrader-coll-info a{
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+}
+.header-button{}
+
+/* slider section css */
+.slider-section{
+    background: url(./img/asset\ 19.jpeg) no-repeat top center;
+    background-size: cover;
+
+}
+
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slider-content{}
+.slider-content h6{
+    color: #e73a3e;
+}
+.slider-content h1{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.slider-content p{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.header-social ul{
+    list-style: none;
+}
+.header-social ul li{}
+.header-social ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 14px;
+    color: #111;
+    font-size: 19px;
+}
+.header-social ul li span{
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+}
+.header-social ul li span::after{
+    content: "";
+    height: 1px;
+    background: #111;
+    width: 35px;
+    position: absolute;
+    right: -45px;
+    top: 51%;
+}
+
+/* bagin part 2 */
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.clint-logo{}
+.clint-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/* about-section */
+.about-img{
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    background: url(./img/asset\ 20.png);
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about-img-text h2{}
+.about-img-text p{}
+.about-text{}
+.finix-text h6{
+    color: #e63b3d;
+    font-weight: 400;
+}
+.finix-text h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.finix-text p{
+    color: #606060;
+    font-size: 18px;
+}
+.finix-text strong{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.finix-text ul li{
+    padding: 5px 0;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family:"Font Awesome 5 Free" ;
+    font-weight: 600;
+    color: #e63b3d;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* why choose us section */
+.features-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    position: relative;
+    transition: .5s;
+}
+.features-item:hover{
+    transform: translateY(-12px);
+}
+.features-item::before{
+    content: "";
+    position: absolute;
+    top: -142px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    border-radius: 50%;
+    background:#fdebeb ;
+}
+.features-item .ft-icon i{
+    color: #e73c3e;
+    font-size: 32px;
+    background: #fff;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.features-item:hover .ft-icon i{
+    color: #fff;
+    background: #e73c3e;
+}
+.ft-icon { 
+    position: relative;
+    z-index: 1;
+}
+.ft-icon h4{}
+.ft-icon p{}
+.mt-top{
+    margin-top: -30px;
+}
+.finix-text{
+    position: relative;
+}
+.play-animation-btn{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background: #fff;
+    font-size: 60px;
+    text-align: center;
+    line-height: 90px;
+    color:#e73a3e ;
+    border-radius: 50%;
+    position: absolute;
+    right: 41%;
+    bottom: 51px;
+}
+.play-animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    background:#e73a3e ;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: playbtn 1.6s ease-out infinite;
+}
+@keyframes playbtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    } 
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+
+}
